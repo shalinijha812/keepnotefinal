@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
-  <artifact name="keepnote1.war">
-    <output-path>$PROJECT_DIR$/out/artifacts/keepnote1_war</output-path>
+  <artifact name="keepnote.war">
+    <output-path>$PROJECT_DIR$/out/artifacts/keepnote_war</output-path>
     <root id="root">
       <element id="archive" name="keepnote.war" />
     </root>

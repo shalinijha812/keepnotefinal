@@ -7,6 +7,12 @@
 
 <head>
 <title>Keep-Board</title>
+<style>
+        tr:first-child{
+            font-weight: bold;
+            background-color: #C6C9C4;
+        }
+    </style>
 </head>
 
 <body>
@@ -54,9 +60,12 @@
 
     <!-- display all existing notes in a tabular structure with Title,Content,Status, Created Date and Action -->
     <h2>List of Notes ${result}</h2>
+
+
        <table>
+            <table border="1" width="90%">
            <tr>
-               <td>Note Title</td><td>Content</td><td>Status</td><td></td>
+               <td>Note ID</td><td>Note Title</td><td>Content</td><td>Status</td>
            </tr>
            <c:forEach items="${notes}" var="note">
                <tr>
@@ -64,6 +73,7 @@
                <td>${note.noteTitle}</td>
                <td>${note.noteContent}</td>
                <td>${note.noteStatus}</td>
+
                </tr>
            </c:forEach>
        </table>
